@@ -58,7 +58,7 @@ void Dictionary::print_words_to_index(char index)
     cout << "앞 글자가 같은 단어 :";
     for (int i = 0; i < this->size; i++)
     {
-        if (words[i].c_str()[0] == index) // string을  *char로 변경 c_str()함수 // 첫글자가 index랑 같으면 그 단어 출력
+        if (words[i][0] == index) // string을  *char로 변경 c_str()함수 // 첫글자가 index랑 같으면 그 단어 출력
         {
             cout << words[i] << " ";
         }
